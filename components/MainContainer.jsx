@@ -15,19 +15,19 @@ const MainContainer = () => {
             <div className='h-[501px] w-full mx-10 bg-[#101317] rounded-[16px] mt-[90px] relative ' >
 
                 {/* Steps  */}
-                <div className='absolute top-[22px] right-[600px] flex'>
+                <div className='absolute top-[22px] 2xl:right-[600px] flex md:right-[380px] lg:right-[520px] '>
                     <div><Image src={steps} alt='steps' /></div>
                     <p className='ml-[11.15px] text-white font-[700] text-[18px] leading-[22px]  '>Steps</p>
                 </div>
 
                 {/* Workout  */}
-                <div className='absolute top-[22px] right-[400px] flex'>
+                <div className='absolute top-[22px] 2xl:right-[400px] flex md:right-[230px] lg:right-[320px] '>
                     <div><BiDumbbell className='text-white w-[23px] h-[23px] -rotate-45' /></div>
                     <p className='ml-[11.15px] text-white font-[700] text-[18px] leading-[22px]  '>Workout</p>
                 </div>
 
                 {/* Nutrition  */}
-                <div className='absolute top-[22px] right-[200px] flex'>
+                <div className='absolute top-[22px] 2xl:right-[200px] flex md:right-[80px] lg:right-[140px] '>
                     <div><Image src={nutrition} alt='steps' /></div>
                     <p className='ml-[11.15px] text-white font-[700] text-[18px] leading-[22px]  '>Nutrition</p>
                 </div>
