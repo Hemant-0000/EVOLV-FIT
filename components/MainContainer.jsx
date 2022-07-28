@@ -34,7 +34,7 @@ const MainContainer = () => {
 
                 {/* Rows  */}
                 <div className='relative pb-[150px] h-[430px] top-[65px] mx-[15px] scrollbar-thin scrollbar-thumb-slate-700 scroll-smooth overflow-y-scroll overflow-x-hidden '>
-                    {/* Will do mapping later here  */}
+                    {/* Mapping is held here  */}
                     {allData.map(({ id, userImage, username, email, stepsWalked, stepsTarget, performedDate, scheduledDate, calories, caloriesTarget, protein, fats, carbs, dataMock, feedback }) => {
                         return <Row key={id} id={id} userImage={userImage} username={username} email={email} stepsWalked={stepsWalked} stepsTarget={stepsTarget} performedDate={performedDate} scheduledDate={scheduledDate} calories={calories} caloriesTarget={caloriesTarget} protein={protein} fats={fats} carbs={carbs} dataMock={dataMock} feedback={feedback} />
                     })}
