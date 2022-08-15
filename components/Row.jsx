@@ -80,7 +80,7 @@ const Row = ({ id, userImage, username, email, stepsWalked, stepsTarget, perform
         <div key={id} className='bg-[#1E262F] mb-4 w-full h-[80px] rounded-[10px] relative ' >
 
             {/* User Profile  */}
-            <div className='absolute lg:left-[11px] top-[18px] md:left-[4px] flex items-center'>
+            <div className='user-profile absolute lg:left-[11px] top-[18px] md:left-[4px] flex items-center'>
                 <div className='w-[40px] h-[40px] mr-[18.4px] '><img className='rounded-full' src={userImage} alt='userimage' /></div>
                 <div className='absolute md:left-[45px] lg:static'>
                     <p className=' text-white font-[500] text-[14px] leading-[17px] mb-[1px] '>{username}</p>
@@ -89,7 +89,7 @@ const Row = ({ id, userImage, username, email, stepsWalked, stepsTarget, perform
             </div>
 
             {/* Steps  */}
-            <div className='relative top-[5px] 2xl:left-[750px] flex md:left-[210px] lg:left-[330px] xl:left-[580px] '>
+            <div className='steps relative top-[5px] 2xl:left-[750px] flex md:left-[210px] lg:left-[330px] xl:left-[580px] '>
                 <div className='w-[60px] h-[60px] absolute top-[8px]'>
                     <CircularProgressbarWithChildren maxValue={stepTarget} value={stepsWalked} styles={buildStyles({
                         strokeLinecap: "butt",
