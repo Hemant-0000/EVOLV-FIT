@@ -89,7 +89,7 @@ const Row = ({ id, userImage, username, email, stepsWalked, stepsTarget, perform
             </div>
 
             {/* Steps  */}
-            <div className='steps relative top-[5px] 2xl:left-[750px] flex md:left-[210px] lg:left-[330px] xl:left-[580px] '>
+            <div className='steps grelative top-[5px] 2xl:left-[750px] flex md:left-[210px] lg:left-[330px] xl:left-[580px] '>
                 <div className='w-[60px] h-[60px] absolute top-[8px]'>
                     <CircularProgressbarWithChildren maxValue={stepTarget} value={stepsWalked} styles={buildStyles({
                         strokeLinecap: "butt",
